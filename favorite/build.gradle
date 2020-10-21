@@ -11,6 +11,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    aaptOptions { cruncherEnabled = false }
+
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 30

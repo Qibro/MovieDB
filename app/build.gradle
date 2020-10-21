@@ -8,6 +8,8 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
+    aaptOptions { cruncherEnabled = false }
+
     defaultConfig {
         applicationId "org.mibrahim.movie"
         minSdkVersion 21
