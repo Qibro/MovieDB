@@ -25,7 +25,6 @@ class DetailMovieActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         val detailMovie = intent.getParcelableExtra<Movie>(EXTRA_DATA)
-
         showDetailMovie(detailMovie)
     }
 
@@ -52,5 +51,10 @@ class DetailMovieActivity : AppCompatActivity() {
         } else {
             fab.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_not_favorite_white))
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return false
     }
 }

@@ -42,7 +42,6 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ListViewHolder>() {
                     .into(iv_item_image)
                 tv_item_title.text = data.title
                 tv_item_rating.text = data.rating.toString()
-                Log.d("TAG", "bind: $BASE_IMAGE_URL${data.backgroundPath}")
             }
         }
 

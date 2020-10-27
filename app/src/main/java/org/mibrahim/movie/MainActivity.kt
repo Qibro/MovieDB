@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         )
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
+        
 
         nav_view.setNavigationItemSelectedListener(this)
 
@@ -48,7 +49,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_favorite -> {
                 try {
-                    val favoriteFrags = Class.forName("org.m_ibrahim.movie.favorite.FavoriteFragment")
+                    val favoriteFrags = Class.forName("org.mibrahim.movie.favorite.FavoriteFragment")
                         .newInstance() as Fragment
                     fragment = favoriteFrags
                     title = getString(R.string.menu_favorite)
